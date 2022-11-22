@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" class="css" />
+  </head>
+  <body>
+    <div class="containter border-2 mt-5">
+      <div class="weather-app">
+        
+        <form>
+          <div class="row">
+          <div class="col-5.5">
+            <input
+              type="text"
+              class="enter-city"
+              id="city-input"
+              placeholder="Enter a city"
+              autocomplete="off"
+            /></div>
+          <div class="col-2">
+               <input type="submit" 
+                class="btn btn-primary" 
+                value="Search">
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-info" id="location-select">
+              Current
+            </button>
+            </div>
+            
+          </form>
+
+          <div class="col-6">
+            <br />
+            <div class="row">
+              <h1 id="city"> </h1></div>
+              <div class="row">
+              <div class="blurb">
+                Wind: <span id="wind"> </span>km/h<br />Humidity:
+                <span id="humidity"> </span>%
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <br />
+            <h2>
+              <span id="degrees"> </span>
+              <span id="celsius"> <a href="#">ºC</a></span>
+            </h2>
+            <h5 id="time"></h5>
+            <span id="forecast"> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
